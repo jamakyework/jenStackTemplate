@@ -1,3 +1,4 @@
+ls
 JEN Stack Template
 ==================
 
@@ -13,7 +14,7 @@ Setup:
 
 Completing the project:
 ----------------------
-* display info from testGet call on the DOM
+[]* display info from testGet call on the DOM
 * add input fields for a new event: eventName, athleteName, award
 * change the testPost button to get this user input and create a new object with this data
 * change the test post to send this object to the server

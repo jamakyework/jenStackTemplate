@@ -42,6 +42,7 @@ $( document ).ready( function(){
   $( '#testGetButton' ).on( 'click', function(){
     console.log( 'in testGetButton on click' );
     getData();
+    $('#outputDiv').append(getData());
   }); // end testGetButton
   $( '#testPostButton' ).on( 'click', function(){
     console.log( 'in testPostButton on click' );
