@@ -6,13 +6,25 @@ $( document ).ready( function(){
   // test get function
   var getData = function(){
     console.log( 'in getData' );
+
+
+
     $.ajax({
       type: 'GET',
       url: '/testGet',
       success: function( response ){
-        console.log( 'back from get call:', response );
-      displayOnDom(response);
-      },
+        console.log( 'back from get call:', response);
+
+// need object from server side
+for(var i = 0; i < response.length; i++){
+  var outputText = '';
+  // outputText += '<p>' + response[i].eventName + " "+ response[i].athleteName + " " + response[i].award + '</p>';
+  outputText += '<p>' + response[i].award + '</p>';
+}
+
+      $( "#outputDiv").append(outputText);
+      // displayOnDom(response);
+    },
       error: function(){
         console.log( 'error with ajax call...');
       }
@@ -36,7 +48,7 @@ $( document ).ready( function(){
       data: newItem,
       success: function( response ){
         console.log( 'back from post call:', response );
-      displayOnDom(response);
+      // displayOnDom(response);
       },
       error: function(){
         console.log( 'error with ajax call...');
@@ -57,14 +69,9 @@ $( document ).ready( function(){
      //end new postButton
  });
 
-  // $( '#testPostButton' ).on( 'click', function(){
-  //   console.log( 'in testPostButton on click' );
-  //   postData();
-  // }); // end testPostButton
-
   var displayOnDom = function(testGetFunc){
     $("#outputDiv").empty();
-      console.log("In testGet:",testGetFunc);
+      console.log("In testGet Show:",testGetFunc);
       $( "#outputDiv").append("<p>" + testGetFunc.field0 + "</p>");
   };
 

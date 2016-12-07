@@ -21,21 +21,23 @@ app.get( '/testGet', function( req, res ){
   console.log( 'testGet url hit' );
   // do work here
   // assemble object to return
-  var objectToReturn = {
+  var objectToReturn =
+  {
     field0: 'I came from testGet on server'
   }; // end object to return
   // return objectToReturn
-  res.send( events);
+  res.send( events );
 }); // end testGet
 
 // testPost
 app.post( '/testPost', urlEncodedParser, function( req, res ){
   console.log( 'testPost url hit. req.body:', req.body );
 events.push(req.body);
-console.log(events);
+console.log("This is in events:", events);
   // do work here
   // assemble object to return
-  var objectToReturn = {
+  var objectToReturn =
+  {
     field0: 'I came from userInput on server'
   }; // end object to return
   // return objectToReturn
