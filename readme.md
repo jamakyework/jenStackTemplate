@@ -20,6 +20,6 @@ Completing the project:
 [x]* change the test post to send this object to the server
 [x]* log out the req.body on the server side (should be this user input)
 [x]* create an array of events on the server side and push new objects to it
-[]* have the server respond with a new object that has this array within
-[] * log out that array in the browser console when received
-[]* display those awards on the DOM
+[x]* have the server respond with a new object that has this array within
+[x] * log out that array in the browser console when received
+[x]* display those awards on the DOM
