@@ -23,7 +23,6 @@ $( document ).ready( function(){
   var postData = function(){
     console.log( 'in postData' );
     // assemble object to send
-
     var newItem = {
       eventName: $("#eventName").val(),
       athleteName:$("#athleteName").val(),

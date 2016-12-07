@@ -22,4 +22,4 @@ Completing the project:
 [x]* create an array of events on the server side and push new objects to it
 []* have the server respond with a new object that has this array within
 [] log out that array in the browser console when received
-* display those awards on the DOM
+[]* display those awards on the DOM

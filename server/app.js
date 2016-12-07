@@ -25,7 +25,7 @@ app.get( '/testGet', function( req, res ){
     field0: 'I came from testGet on server'
   }; // end object to return
   // return objectToReturn
-  res.send( objectToReturn );
+  res.send( events);
 }); // end testGet
 
 // testPost
@@ -36,7 +36,7 @@ console.log(events);
   // do work here
   // assemble object to return
   var objectToReturn = {
-    field0: 'I came from testPost on server'
+    field0: 'I came from userInput on server'
   }; // end object to return
   // return objectToReturn
   res.send( objectToReturn );
